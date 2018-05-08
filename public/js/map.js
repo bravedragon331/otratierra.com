@@ -1,4 +1,4 @@
-jQuery(function ($) {
+function initmap() {
    "use strict";
    if ($("#googleMap").length) {
       function initialize() {
@@ -124,4 +124,4 @@ jQuery(function ($) {
       }
       google.maps.event.addDomListener(window, "load", initialize);
    }
-});
+};
