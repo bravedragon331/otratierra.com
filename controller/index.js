@@ -10,7 +10,7 @@ exports.contact = function(req, res){
     var smtpTransport = nodemailer.createTransport(smtpConfig);
     var mailOptions;
     mailOptions={
-        to : 'support@beanystudio.com',
+        to : 'bryancho31@gmail.com',
         subject : "New message from "+req.body.name + '('+req.body.email + ')',
         html : req.body.message + '<br>' + 'From ' + req.body.company
     }

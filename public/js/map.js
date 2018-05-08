@@ -5,7 +5,7 @@ function initmap() {
          var mapOptions = {
             zoom: 16,
             scrollwheel: false,
-            center: new google.maps.LatLng(14.598677, -90.507443),
+            center: new google.maps.LatLng(14.6209577, -90.5497246),
             zoomControl: true,
             gestureHandling: 'cooperative',
             overviewMapControl: true,
