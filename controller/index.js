@@ -11,7 +11,7 @@ exports.contact = function(req, res){
     var mailOptions;
     mailOptions={
         to : 'support@beanystudio.com',
-        subject : "New message from "+req.body.name,
+        subject : "New message from "+req.body.name + '('+req.body.email + ')',
         html : req.body.message + '<br>' + 'From ' + req.body.company
     }
     smtpTransport.sendMail(mailOptions, function(error, response){
